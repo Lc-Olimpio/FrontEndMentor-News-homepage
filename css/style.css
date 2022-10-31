@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", "sans-serif";
+  font-size: 15px;
+}
+
+.container {
+  margin: 2em;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.5fr 0.2fr 0.2fr 0.05fr;
+  gap: 2em;
+  grid-template-areas: "head nave nave" "figure figure aside" "main article aside" "cont1 cont2 cont3" "footer footer footer";
+}
+
+.header {
+  grid-area: head;
+}
+
+.nav {
+  grid-area: nave;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+.nav ul li {
+  margin: 0 1em;
+  color: hsl(233deg, 8%, 79%);
+}
+.nav ul li:last-child {
+  margin-right: 0;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: hsl(236deg, 13%, 42%);
+  font-size: 1em;
+}
+.nav ul li a:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+
+.figure {
+  grid-area: figure;
+  height: 100%;
+}
+.figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  grid-area: main;
+}
+.main h1 {
+  color: hsl(240deg, 100%, 5%);
+  font-variation-settings: "wght" 650;
+  font-size: 3em;
+}
+
+.article {
+  grid-area: article;
+}
+.article p {
+  color: hsl(236deg, 13%, 42%);
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.article a {
+  display: block;
+  width: 12em;
+  margin-top: 2em;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  background: hsl(5deg, 85%, 63%);
+  color: hsl(36deg, 100%, 99%);
+}
+.aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: hsl(240deg, 100%, 5%);
+  padding: 1.5em 1.5em 0 1.5em;
+}
+.aside span {
+  font-size: 2em;
+  font-variation-settings: "wght" 700;
+  color: hsl(35deg, 77%, 62%);
+}
+.aside div {
+  color: hsl(36deg, 100%, 99%);
+  margin: 0.5em 0;
+  border-bottom: 1px solid hsl(233deg, 8%, 79%);
+}
+.aside div a {
+  font-size: 0.8em;
+  font-variation-settings: "wght" 550;
+  text-decoration: none;
+  color: hsl(36deg, 100%, 99%);
+}
+.aside div a:hover {
+  color: hsl(35deg, 77%, 62%);
+}
+.aside div p {
+  margin-top: 0.6em;
+  margin-bottom: 1em;
+  color: hsl(233deg, 8%, 79%);
+  line-height: 2em;
+}
+.aside div:last-child {
+  border: none;
+}
+
+.content1 {
+  grid-area: cont1;
+}
+
+.content2 {
+  grid-area: cont2;
+}
+
+.content3 {
+  grid-area: cont3;
+}
+
+.news-content {
+  display: flex;
+  justify-content: space-between;
+}
+.news-content img {
+  width: 6em;
+  height: 8em;
+  margin-right: 2em;
+}
+.news-content div span {
+  font-variation-settings: "wght" 500;
+  font-size: 2.2em;
+  color: hsl(233deg, 8%, 79%);
+}
+.news-content div h3 {
+  font-variation-settings: "wght" 600;
+  font-size: 1.3em;
+  color: hsl(240deg, 100%, 5%);
+  margin: 0.5em 0;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
