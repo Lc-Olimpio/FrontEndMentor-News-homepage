@@ -26,7 +26,7 @@ Users should be able to:
 ### Screenshot
 
 ![](assets/images/Screenshot_Desktop.png)
-![](assets/images/Screenshot_Mobile.png.png)
+![](assets/images/Screenshot_Mobile.png)
 ![](assets/images/Screenshot_MobileMenu.png.png)
 
 ## My process
