@@ -2,31 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | News homepage</title>
 </head>
-<body>
+<body id="body">
+
+  <div class="menu" id="menu">
+    <img id="closeMenuButton" src="assets/images/icon-menu-close.svg" alt="menu close">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">New</a></li>
+      <li><a href="#">Popular</a></li>
+      <li><a href="#">Trending</a></li>
+      <li><a href="#">Categories</a></li>
+    </ul>
+  </div>
 
   <div class="container">
+
     <header class="header">
       <img src="assets/images/logo.svg" alt="Logo">
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+        <img id="openMenuButton" src="assets/images/icon-menu.svg" alt="menu" class="menuIcon">
+      </nav>
     </header>
 
-    <nav class="nav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Popular</a></li>
-        <li><a href="#">Trending</a></li>
-        <li><a href="#">Categories</a></li>
-      </ul>
-    </nav>
-
     <figure class="figure">
-      <img src="assets/images/image-web-3-desktop.jpg" alt="">
+      <img src="assets/images/image-web-3-desktop.jpg" alt="image web 3">
+      <img src="assets/images/image-web-3-mobile.jpg" alt="image web 3">
     </figure>
 
     <main class="main">
@@ -65,7 +78,7 @@
       <img src="assets/images/image-retro-pcs.jpg" alt="retro pcs">
       <div>
         <span>01</span>
-        <h3>Reviving Retro PCs</h3>
+        <h3><a href="#">Reviving Retro PCs</a></h3>
         <p>What happens when old PCs are given modern upgrades?</p>
       </div>
     </section>
@@ -74,7 +87,7 @@
       <img src="assets/images/image-top-laptops.jpg" alt="top laptops">
       <div>
         <span>02</span>
-        <h3>Top 10 Laptops of 2022</h3>
+        <h3><a href="#">Top 10 Laptops of 2022</a></h3>
         <p>Our best picks for various needs and budgets.</p>
       </div>
     </section>
@@ -83,18 +96,19 @@
       <img src="assets/images/image-gaming-growth.jpg" alt="gaming growth">
       <div>
         <span>03</span>
-        <h3>The Growth of Gaming</h3>
+        <h3><a href="#">The Growth of Gaming</a></h3>
         <p>How the pandemic has sparked fresh opportunities.</p>
       </div>
     </section>
 
     <footer class="footer attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/home">Lucas O. Silva</a>.
+       </p>
     </footer>
-    
   </div>
 
- 
+  <script src="script/script.js"></script>
 </body>
 </html>
